@@ -35,7 +35,7 @@ public class CustomUserDetailsService implements UserDetailsService {
                 optionalUser.isEnabled(),
                 true,
                 true,
-                optionalUser.isAccountLocked(),
+                true,
                 getAuthorities(List.of(optionalUser.getRole()))
         );
     }
